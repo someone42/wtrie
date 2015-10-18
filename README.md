@@ -6,6 +6,7 @@ Here is an example. Say the weighted trie contains three items, in the following
 - Item A, with weight 12
 - Item B, with weight 100
 - Item C, with weight 8
+
 Querying the trie with cumulative weights of between 0 and 11 (inclusive) would select item A. Likewise, cumulative weights of between 12 and 111 would select item B, and cumulative weights of between 112 and 119 would select item C.
 
 It's as if all the items occupied a space equal to their weight in bytes, and all those items were placed contiguously, in order, in a large byte array. Cumulative weight refers to the position within that fictitious large byte array.
